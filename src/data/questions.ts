@@ -6,7 +6,7 @@ export const questions = [
   },
   {
     image: "/game2.jpg",
-    options: ["Outlast", "Alien: Isolation", "Amnesia: The Dark Descent", "Resident Evil 2"],
+    options: ["Outlast", "Alien: Isolation", "Amnesia", "Resident Evil 2"],
     answer: "Resident Evil 2",
   },
   {
