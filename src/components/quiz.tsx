@@ -25,7 +25,7 @@ const Quiz = () => {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setIsAnswered(false);
       setSelectedOption("");
-    }, 1000);
+    }, 2000);
   };
 
   const currentQuestion = questions[currentQuestionIndex];
@@ -43,10 +43,12 @@ const Quiz = () => {
         <div className="flex flex-col gap-4 text-center">
           <h2 className="text-2xl font-bold">Yayyy, Quiz Completed! 🎉</h2>
           <div>
-            <p>
+            <p className="text-muted-foreground">
               You scored {score} out of {questions.length}! 💫
             </p>
-            <p>You just won a special gift code! Check it out! 👇</p>
+            <p className="text-muted-foreground">
+              You just won a special gift code! Check it out! 👇
+            </p>
           </div>
           <div>
             <GiftDialog />

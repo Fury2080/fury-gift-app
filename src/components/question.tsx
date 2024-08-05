@@ -40,6 +40,7 @@ const Question = ({
           <Button
             key={index}
             onClick={() => handleAnswer(option)}
+            variant={"secondary"}
             className={`w-full p-4 text-center ${
               isAnswered
                 ? option === question.answer
