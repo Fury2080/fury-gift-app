@@ -37,7 +37,7 @@ export function GiftDialog() {
         <DialogHeader>
           <DialogTitle>Gift Code</DialogTitle>
           <DialogDescription>
-            A special gift code for a special person. Dedicated to Surbhi!
+            A special gift code for a special person. Dedicated to Khanakh!
           </DialogDescription>
         </DialogHeader>
         <div className="flex items-center space-x-2">
