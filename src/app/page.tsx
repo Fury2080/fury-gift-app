@@ -8,7 +8,7 @@ export default async function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">
       <div className="space-y-2 border-b-[1px] p-4">
-        <h1 className="text-center text-2xl font-bold sm:text-3xl">
+        <h1 className="text-center text-2xl font-bold text-foreground sm:text-3xl">
           Happy Birthday Surbhi 🎉
         </h1>
         <div className="text-center">
@@ -26,16 +26,32 @@ export default async function Home() {
       {/* FOOTER */}
       <div className="border-t-[1px] p-2 sm:p-4">
         <div className="flex items-center justify-between">
-          <Link
-            href={"https://github.com/aryanprince/fury-gift-app"}
-            className={buttonVariants({ variant: "link" })}
-          >
-            <div className="flex items-center gap-2">
-              <Github className="h-4 w-4" />
-              <p className="text-sm sm:text-base">View Source</p>
-              <ExternalLink className="h-4 w-4" />
-            </div>
-          </Link>
+          <p className="text-sm text-foreground">
+            Built using{" "}
+            <Link
+              className="underline underline-offset-4"
+              href="https://nextjs.org"
+            >
+              Next.js
+            </Link>{" "}
+            and{" "}
+            <Link
+              className="underline underline-offset-4"
+              href="https://tailwindcss.com"
+            >
+              {" "}
+              Tailwind
+            </Link>
+            . View{" "}
+            <Link
+              className="underline underline-offset-4"
+              href="https://github.com/aryanprince/fury-gift-app"
+            >
+              source code
+            </Link>{" "}
+            on
+            <Github className="ml-1 inline-block h-4 w-4" />
+          </p>
           <ThemeToggle />
         </div>
       </div>
