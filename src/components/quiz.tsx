@@ -40,9 +40,9 @@ const Quiz = () => {
           selectedOption={selectedOption}
         />
       ) : (
-        <div className="flex flex-col gap-4 text-center">
+        <div className="flex flex-col gap-8 text-center">
           <h2 className="text-2xl font-bold">Yayyy, Quiz Completed! 🎉</h2>
-          <div>
+          <div className="space-x-4">
             <p className="text-muted-foreground">
               You scored {score} out of {questions.length}! 💫
             </p>

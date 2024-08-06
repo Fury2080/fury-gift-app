@@ -44,7 +44,16 @@ const Question = ({
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <p className="px-2 text-foreground">
+        {isAnswered
+          ? question.options.find((option) => option === question.answer) ===
+            selectedOption
+            ? "Correct!"
+            : "Incorrect!"
+          : "Select an option below"}
+      </p>
+
+      <div className="grid grid-cols-2 gap-4 p-2">
         {question.options.map((option, index) => (
           <Button
             key={index}
