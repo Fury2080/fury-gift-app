@@ -47,7 +47,7 @@ const Quiz = () => {
               You scored {score} out of {questions.length}! 💫
             </p>
             <p className="text-muted-foreground">
-              You just won a special gift code! Check it out! 👇
+              You just won a special gift code, Surbhi! Check it out! 👇
             </p>
           </div>
           <div>

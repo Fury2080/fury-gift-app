@@ -6,6 +6,7 @@ import { AspectRatio } from "./ui/aspect-ratio";
 
 interface QuestionProps {
   question: {
+    questionNumber: number;
     image: string;
     options: string[];
     answer: string;
@@ -23,6 +24,13 @@ const Question = ({
 }: QuestionProps) => {
   return (
     <div className="space-y-4">
+      <div className="px-2">
+        <p className="text-xl font-bold">Question {question.questionNumber}</p>
+        <p className="text-sm text-muted-foreground sm:text-base">
+          What game is this from?
+        </p>
+      </div>
+
       <div className="flex items-center justify-center">
         <div className="w-[400px]">
           <AspectRatio ratio={16 / 9}>
@@ -35,6 +43,7 @@ const Question = ({
           </AspectRatio>
         </div>
       </div>
+
       <div className="grid grid-cols-2 gap-4">
         {question.options.map((option, index) => (
           <Button

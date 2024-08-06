@@ -1,4 +1,4 @@
-import { Copy } from "lucide-react";
+import { Copy, Sparkles } from "lucide-react";
 import { useState } from "react";
 
 import { Button } from "~/components/ui/button";
@@ -29,6 +29,7 @@ export function GiftDialog() {
     <Dialog>
       <DialogTrigger asChild>
         <Button variant="default" className="w-fit">
+          <Sparkles className="mr-2 h-4 w-4" />
           Gift Code
         </Button>
       </DialogTrigger>
