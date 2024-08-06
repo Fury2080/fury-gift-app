@@ -9,7 +9,7 @@ export default async function Home() {
     <div className="flex min-h-screen flex-col bg-background text-foreground">
       <div className="space-y-2 border-b-[1px] p-4">
         <h1 className="text-center text-2xl font-bold text-foreground sm:text-3xl">
-          Happy Birthday Surbhi 🎉
+          Happy Birthday Khanakh 🎉
         </h1>
         <div className="text-center">
           <p className="text-sm text-muted-foreground sm:text-base">
