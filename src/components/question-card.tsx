@@ -1,13 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import { AspectRatio } from "~/components/ui/aspect-ratio";
 import { Button } from "~/components/ui/button";
 
 export default function QuestionCard() {
-  const [selectedOption, setSelectedOption] = useState(true);
-
   return (
     <div className="flex h-fit flex-col items-center justify-center gap-8 rounded-lg border border-border p-8">
       {/* HEADING */}
