@@ -27,7 +27,7 @@ const Question = ({
       <div className="px-2">
         <p className="text-xl font-bold">Question {question.questionNumber}</p>
         <p className="text-sm text-muted-foreground sm:text-base">
-          What game is this from?
+          What game is this image from?
         </p>
       </div>
 
